@@ -61,7 +61,7 @@ class _QRScanPageState extends State<QRScanPage> {
                             child: FutureBuilder(
                               future: controller?.getFlashStatus(),
                               builder: (context, snapshot) {
-                                if ('${snapshot.data}'==false) {
+                                if (snapshot.data==false) {
                                   return Icon(Icons.flash_off);
                                 } else {
                                   return Icon(Icons.flash_on);
